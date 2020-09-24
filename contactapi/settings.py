@@ -15,6 +15,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'authentication',
+    'contacts',
 ]
 
 REST_FRAMEWORK = {

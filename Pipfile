@@ -10,6 +10,6 @@ django = "*"
 djangorestframework = "*"
 pyjwt = "*"
 gunicorn = "*"
-
+drf-yasg = "*"
 [requires]
 python_version = "3.8"

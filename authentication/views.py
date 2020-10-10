@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 from rest_framework.generics import GenericAPIView
 
-from .serializers import UserSerializer
+from .serializers import UserSerializer, LoginSerializer
 from contactapi.env import JWT_SECRET_KEY
 
 from django.contrib.auth import authenticate
@@ -23,6 +23,8 @@ class RegisterView(GenericAPIView):
 
 
 class LoginView(GenericAPIView):
+    serializer_class = LoginSerializer
+    
     def post(self, request):
         data = request.data
         username = data.get('username','')
